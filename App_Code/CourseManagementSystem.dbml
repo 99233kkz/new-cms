@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Database" Class="CourseManagementSystemDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="DatabaseConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Student" Member="Student">
+    <Type Name="Student">
+      <Column Name="SId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="Dept" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="Class" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Course" Member="Course">
+    <Type Name="Course">
+      <Column Name="Course" Member="Course1" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="CId" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="STime" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="SCredits" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TeachTime" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="Dept" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="TId" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Customer" Member="Customer">
+    <Type Name="Customer">
+      <Column Name="pwd" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="cId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Score" Member="Score">
+    <Type Name="Score">
+      <Column Name="SId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CId" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="Score" Member="Score1" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TeaClaI" Member="TeaClaI">
+    <Type Name="TeaClaI">
+      <Column Name="Dept" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="CId" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Teacher" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Coursename" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TeaClaInfo" Member="TeaClaInfo">
+    <Type Name="TeaClaInfo">
+      <Column Name="Dept" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="CId" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Teacher" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="CourseName" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
